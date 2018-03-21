@@ -161,9 +161,8 @@ ext_modules = cythonize(ext_modules)
 
 # ===========  Package metadata  ===========
 
-LONG_DESC_PATH = os.path.join(CURR_DIR, "doc/meta/long_desc_raw.txt")
-with open(LONG_DESC_PATH, "r") as f:
-    LONG_DESC = f.read()
+
+LONG_DESC = 'retrieve data pymarketcap'
 
 with open(REQ_PATH, "r") as f:
     REQ = [line.strip("\n") for line in f.readlines()]
